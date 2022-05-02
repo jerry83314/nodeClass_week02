@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "f2cec6b1-60f8-46ef-901e-974b3136256c",
+		"name": "todolist mongoose -heroku",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "新增一筆 posts",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Bing\",\n    \"tags\": \"插畫\",\n    \"content\": \"今天畫什麼呢\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://serene-everglades-02795.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"serene-everglades-02795",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "取得所有 posts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://serene-everglades-02795.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"serene-everglades-02795",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除全部 posts",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://serene-everglades-02795.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"serene-everglades-02795",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除單筆 posts",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://serene-everglades-02795.herokuapp.com/posts/6263c00f1e087783163886e0",
+					"protocol": "https",
+					"host": [
+						"serene-everglades-02795",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts",
+						"6263c00f1e087783163886e0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "更新單筆 posts",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Evan\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://serene-everglades-02795.herokuapp.com/posts/6263c0471e087783163886e6",
+					"protocol": "https",
+					"host": [
+						"serene-everglades-02795",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts",
+						"6263c0471e087783163886e6"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
